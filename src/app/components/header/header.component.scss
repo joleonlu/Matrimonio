@@ -1,0 +1,114 @@
+
+body {
+
+  background: rgb(0,212,255);
+  background: linear-gradient(45deg, rgba(0,212,255,1) 0%, rgba(11,3,45,1) 100%);
+  background-image: url(https://img.freepik.com/fotos-premium/concepto-accesorios-boda-anillos-boda-sobre-fondo-blanco_185193-70315.jpg?w=1380);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+
+.image-container {
+  position: relative;
+}
+
+
+.image-container img {
+  max-width: 800px;
+  max-height: 800px;
+}
+
+
+
+.button-wrapper {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.button-wrapper .btn {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  height: 60px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.btn + .btn {
+  margin-left: 40px;
+}
+
+.custom-button {
+  border: none;
+  padding: 10px 24px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  background-color: rgba(213, 214, 215, 0.9);
+  color: rgba(183, 167, 53, 0.6);
+  border: 1px solid rgba(183, 167, 53, 0.6);
+  transition: all .3s ease;
+  cursor: pointer;
+
+
+  .mat-icon {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+  &:hover {
+    background-color: rgba(183, 167, 53, 0.6);
+    color: rgba(213, 214, 215, 0.9);
+    border-color: rgba(213, 214, 215, 0.9);
+  }
+}
+
+
+.outline {
+
+  color: rgba(183, 167, 53, 0.6);
+  border: 1px solid rgba(183, 167, 53, 0.6);
+  transition: all .3s ease;
+}
+
+.outline:hover {
+  transform: scale(1.125);
+  color: rgba(213, 214, 215, 0.9);
+  border-color: rgba(255, 255, 255, 0.9);
+  transition: all .3s ease;
+}
+
+.fill {
+  background:  rgba(213, 214, 215, 0.9);
+  color: rgba(183, 167, 53, 0.6);
+  filter: drop-shadow(0);
+  border: 1px solid rgba(183, 167, 53, 0.6);
+  font-weight: bold;
+  transition: all .3s ease;
+}
+
+.fill:hover{
+  transform: scale(1.125);
+  border-color: rgba(255, 255, 255, 0.9);
+  filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
+  transition: all .3s ease;
+}
